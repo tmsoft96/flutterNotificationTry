@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "611614313017",
+    "firebase_url": "https://fluttertrywork.firebaseio.com",
+    "project_id": "fluttertrywork",
+    "storage_bucket": "fluttertrywork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611614313017:android:cdc9db34441628c47edbe8",
+        "android_client_info": {
+          "package_name": "com.example.try_notification_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611614313017-ugig4hhioaqhevob4sjholqn186o5g2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzabILScuehxAh5XUqh1lNIaXw06mdQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611614313017-ugig4hhioaqhevob4sjholqn186o5g2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
