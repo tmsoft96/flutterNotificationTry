@@ -1,3 +1,4 @@
+import 'package:android_intent/android_intent.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:try_notification_2/config/locator.dart';
@@ -15,15 +16,21 @@ final PushNotificationService _pushNotificationService =
     locator<PushNotificationService>();
 
 Future<void> main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // notificationAppLaunchDetails =
-  //     await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
+  WidgetsFlutterBinding.ensureInitialized();
+  notificationAppLaunchDetails =
+      await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
   setupLocator();
   _pushNotificationService.onNoticationSettings();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  // AndroidIntent intent = AndroidIntent(
+  //     action: 'android.intent.action.RUN',
+  //     package: 'com.example.try_notification_2',
+  //     componentName: 'com.example.try_notification_2.MainActivity',
+  //     arguments: {'route': '/secondPage'});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
